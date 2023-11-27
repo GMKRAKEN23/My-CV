@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(116, 115, 115);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+main{
+    width: 100%;
+    max-width: 800px;
+    background: transparent;
+    min-height: 700px;
+    max-height: 700px;
+    border-radius: 15px;
+    color: wheat;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+main section{
+    background: linear-gradient(to bottom left, rgb(41, 38, 38), rgb(144, 20, 144));
+    box-shadow: inset 2.70px 4.68px 7.38px -0.92px rgba(0, 0, 0, 0.15),
+    inset -4.05px -7.01px 7.38px -0.92px rgba(0, 0, 0, 0.3),
+    8.10px 14.03px 5.53px -2.77px rgba(0, 0, 0, 0.6);
+}
+
+header{
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+
+.section_profil{
+    width: auto;
+    text-align: center;
+    height: 90%;
+    border: solid 2px aliceblue;
+    margin: 0 10px;
+    border-radius: 15px;
+    padding: 5px 10px;
+    animation: move1 3s;
+}
+
+@keyframes move1{
+    0%{
+        transform: scaleX(-200px);
+    }
+    10%{
+        transform: translateX(-100px);
+    }
+    20%{
+        transform: translateX(-50px);
+    }
+    100%{
+        transform: translateX(0px);
+    } 
+}
+
+.section_description{
+    width: auto;
+    text-align: justify;
+    height: 90%;
+    border: solid 2px aliceblue;
+    border-radius: 15px; 
+    padding: 0 10px;
+    margin: 0 10px;
+    grid-column: 2/2;
+    grid-row: 1/2;
+    animation: move2 3s;
+}
+
+@keyframes move2{
+    0%{
+        transform: scaleX(200px);
+    }
+    10%{
+        transform: translateX(100px);
+    }
+    20%{
+        transform: translateX(50px);
+    }
+    100%{
+        transform: translateX(0px);
+    } 
+}
+
+.section_description h2{
+    text-transform: uppercase;
+    text-align: center;
+    padding: 5px;
+}
+
+.section_information{
+    width: auto;
+    height: auto;
+    border: solid 2px aliceblue;
+    margin: 0 10px;
+    border-radius: 15px;
+    padding: 10px 10px;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    animation: move3 3s;
+}
+
+@keyframes move3{
+    0%{
+        transform: scaleX(-200px);
+    }
+    10%{
+        transform: translateX(-100px);
+    }
+    20%{
+        transform: translateX(-50px);
+    }
+    100%{
+        transform: translateX(0px);
+    }   
+}
+
+.section_information h2{
+    text-transform: uppercase;
+    text-align: center;
+    padding: 5px;
+}
+
+.section_information h3{
+    padding: 5px 10px;
+}
+
+.section_information time, p{
+    padding: 0 10px;
+}
+
+.section_information .adress{
+    display: block;
+}
+
+.experience{
+    width: auto;
+    height: auto;
+    border: solid 2px aliceblue;
+    margin: 0 10px;
+    border-radius: 15px;
+    padding: 10px 10px;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    animation: move4 3s;
+}
+
+.experience h3{
+    padding: 5px 10px;
+}
+
+.experience time, p{
+    padding: 0 10px;
+}
+
+@keyframes move4{
+    0%{
+        transform: scaleX(200px);
+    }
+    10%{
+        transform: translateX(100px);
+    }
+    20%{
+        transform: translateX(50px);
+    }
+    100%{
+        transform: translateX(0px);
+    }   
+}
+
+.experience h2{
+    text-transform: uppercase;
+    text-align: center;
+    padding: 5px;
+}
+
+.experience h3{
+    text-transform: uppercase;
+}
+
+.skills{
+    width: auto;
+    height: auto;
+    border: solid 2px aliceblue;
+    margin: 0 10px;
+    border-radius: 15px;
+    padding: 10px 10px;
+    grid-column: 1/3;
+    grid-row: 3/3;
+    margin: 20px 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    animation: move5 3s;
+}
+
+@keyframes move5{
+    0%{
+        transform: scaleY(200px);
+    }
+    10%{
+        transform: translateY(100px);
+    }
+    20%{
+        transform: translateY(50px);
+    }
+    100%{
+        transform: translateY(0px);
+    }  
+}
+
+.skills h2{
+    text-transform: uppercase;
+    padding: 5px 0px;
+}
+
+.skills ul li{
+    list-style: none;
+    text-align: left;
+    font-size: 1rem;
+    text-transform: capitalize;
+    margin: 5px 0;
+    font-weight: 600;
+}
+
+.skills .hard_skills ul li{
+    display: flex;
+    align-items: center;
+}
+
+.skills .hard_skills ul li i{
+    padding: 0 5px;
+}
